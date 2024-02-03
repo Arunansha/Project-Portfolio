@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* nav bar starts */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(128, 128, 223);
+    font-size: 1.03rem;
+}
+
+/* main section */
+
+main hr{
+    border: 0;
+    height: 1.2px;
+    margin: 60px 84px;
+    background: rgb(151, 68, 206);
+}
+.left{
+    font-size: 1.5rem;
+}
+.left:hover{
+    color: rgb(128, 128, 223);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 90px 0;
+    align-items: center;
+}
+.first-section > div{
+    width: 30%;
+}
+.left-section{
+    font-size: 3rem;
+    
+}
+
+.left-section .buttons{
+    padding: 30px 0;
+}
+
+.left-section .btn{
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.right-section img{
+    width: 80%;
+}
+.purple{
+    color: rgb(170,107,228);
+}
+.second-section{
+    max-width: 80vh;
+    margin-left:100px;
+    height:80vh;
+}
+.second-section h1{
+    font-size: 1.9rem;
+    margin-left: 0;
+}
+
+.text-grey{
+    color: grey;
+}
+.second-section .box{
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.second-section .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 13vw;
+
+}
+.image-top{
+    width: 50px;
+    position: relative;
+    top: -37px;
+    left: -26px;
+}
+.image-top1{
+    width: 29px;
+    position: relative;
+    top: -37px;
+    left: -15px
+}
+
+
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 14px;
+    left: -14px;
+
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 10px;
+    left: -16px;
+}
+.vertical-desc span{
+    color: rgb(192, 88, 88);
+}
+
+/* footer starts */
+
+footer{
+    background-color: #0e0e1a;
+    
+   
+}
+.footer{
+    display: flex;
+    padding: 20px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+
+ div.about ul{
+    display: flex;
+    justify-content: center;
+}  
+
+div.about ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+div.about{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+.icon{
+    font-size: 30px;
+}
+
+footer .copyright{
+   text-align: center;
+   color: gray;
+   padding: 12px 0;
+}
+.address{
+    color: rgb(223, 106, 106);
+}
+
+/* making it responsive */  
+
+@media screen and (max-width: 800px) { 
+
+    .first-section{
+        flex-direction: column-reverse;
+    }
+    .box{
+        flex-direction: column;
+    }
+
+   
+    .vertical-title, .vertical-desc {
+        left: 45px;
+        top: -44px;
+    }
+    .second-section .box{
+        width: 50vw;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .left-section{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-section{
+        width: 721px !important;
+       display: flex;
+       justify-content: center;
+    }
+    .right-section img{
+        width: 45vw;
+        margin-bottom: 73px;
+    }
+    .second-section{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    body{
+        min-width: fit-content;
+    }
+    .image-top{
+        top: -13px;
+        left: -54px;
+
+    }
+    .image-top1{
+        top: -13px;
+        left: -34px;
+
+    }
+    .second-section{
+        height: 141vh;
+    }
+    .second-section .box{
+        background-color: white;
+        width: 2px;
+        height: 109vh;
+        margin: 0 56px;
+        display: flex;
+        margin: 58px 56px;
+    }
+    .second-section .vertical{
+        height: 1px;
+        width: 38px;
+        background-color: white;
+        margin: 8vh 0 30vh 0;
+    
+    }
+
+
+}  
